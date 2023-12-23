@@ -8,6 +8,8 @@
  */
 // Take the following array:
 const theList = ['Laurence', 'Svekis', true, 35, null, undefined, { test: 'one', score: 55 }, ['one', 'two']]
+console.log(theList);
+
 
 /*
 Manipulate your array using various methods, such as pop(), push(), shift(), and
@@ -23,6 +25,13 @@ You can take the following steps, or adopt your own approach:
 • Output it to the console.
 */
 
+// theList.shift()
+// theList.unshift("FIRST")
+// theList.splice(2, 1, "Middle")
+// theList.splice(3, 1, "hello world")
+// theList.splice(4, 3, "LAST")
+// theList.pop()
+// console.log(theList);
 
 // Your final output is look like ["FIRST", "Svekis", "MIDDLE", "hello World", "LAST"]
 
@@ -46,26 +55,26 @@ structure.
  * @param { Solution}
  */
 
-const inventory = [];
+// const inventory = [];
 
-const item1 = { name: 'Laptop', model: 'ABC123', cost: 999.99, quantity: 10 };
-const item2 = { name: 'Smartphone', model: 'XYZ456', cost: 499.99, quantity: 20 };
-const item3 = { name: 'Headphones', model: 'PQR789', cost: 79.99, quantity: 30 };
+// const item1 = { name: 'Laptop', model: 'ABC123', cost: 999.99, quantity: 10 };
+// const item2 = { name: 'Smartphone', model: 'XYZ456', cost: 499.99, quantity: 20 };
+// const item3 = { name: 'Headphones', model: 'PQR789', cost: 79.99, quantity: 30 };
 
-inventory.push(item1, item2, item3);
+// inventory.push(item1, item2, item3);
 
-console.log('Inventory:', inventory);
+// console.log('Inventory:', inventory);
 
-// Step 4: Access the quantity element of the third item and log it to the console.
-const thirdItemQuantity = inventory[2].quantity;
-console.log('Quantity of the third item:', thirdItemQuantity);
+// // Step 4: Access the quantity element of the third item and log it to the console.
+// const thirdItemQuantity = inventory[2].quantity;
+// console.log('Quantity of the third item:', thirdItemQuantity);
 
-// Experiment: Add and access more elements within the data structure.
-const newItem = { name: 'Tablet', model: 'JKL012', cost: 299.99, quantity: 15 };
-inventory.push(newItem);
+// // Experiment: Add and access more elements within the data structure.
+// const newItem = { name: 'Tablet', model: 'JKL012', cost: 299.99, quantity: 15 };
+// inventory.push(newItem);
 
-// Log the updated inventory array to the console.
-console.log('Updated Inventory:', inventory);
+// // Log the updated inventory array to the console.
+// console.log('Updated Inventory:', inventory);
 
 /**
  * @param { chapter 3 projects}
@@ -82,25 +91,25 @@ console.log('Updated Inventory:', inventory);
  * @param {Solution}
  */
 
-// Step 1: Set a dynamic number value (you can change this to any number).
-const dynamicNumber = 10;
+// // Step 1: Set a dynamic number value (you can change this to any number).
+// const dynamicNumber = 10;
 
-// Step 2: Prompt the user to enter a number.
-const userNumber = parseFloat(prompt("Enter a number:"));
+// // Step 2: Prompt the user to enter a number.
+// const userNumber = parseFloat(prompt("Enter a number:"));
 
-// Step 3: Check and compare the user's number with the dynamic number.
-if (isNaN(userNumber)) {
-    // Check if the user entered a valid number.
-    console.log("Please enter a valid number.");
-} else {
-    if (userNumber > dynamicNumber) {
-        console.log(`${userNumber} is greater than ${dynamicNumber}.`);
-    } else if (userNumber < dynamicNumber) {
-        console.log(`${userNumber} is less than ${dynamicNumber}.`);
-    } else {
-        console.log(`${userNumber} is equal to ${dynamicNumber}.`);
-    }
-}
+// // Step 3: Check and compare the user's number with the dynamic number.
+// if (isNaN(userNumber)) {
+//     // Check if the user entered a valid number.
+//     console.log("Please enter a valid number.");
+// } else {
+//     if (userNumber > dynamicNumber) {
+//         console.log(`${userNumber} is greater than ${dynamicNumber}.`);
+//     } else if (userNumber < dynamicNumber) {
+//         console.log(`${userNumber} is less than ${dynamicNumber}.`);
+//     } else {
+//         console.log(`${userNumber} is equal to ${dynamicNumber}.`);
+//     }
+// }
 
 
 
@@ -117,23 +126,23 @@ if (isNaN(userNumber)) {
  * @param {Solution}
  */
 
-// Prompt the user to enter a name.
-const userName = prompt("Enter your name:");
+// // Prompt the user to enter a name.
+// const userName = prompt("Enter your name:");
 
-// Switch statement to check if the entered name is known.
-switch (userName.toLowerCase()) {
-    case "alice":
-        console.log("Hello, Alice! You're my friend.");
-        break;
-    case "bob":
-        console.log("Hey Bob! You're my friend too.");
-        break;
-    case "charlie":
-        console.log("Charlie! Nice to see you, my friend.");
-        break;
-    default:
-        console.log(`Sorry, I don't know ${userName}.`);
-}
+// // Switch statement to check if the entered name is known.
+// switch (userName.toLowerCase()) {
+//     case "alice":
+//         console.log("Hello, Alice! You're my friend.");
+//         break;
+//     case "bob":
+//         console.log("Hey Bob! You're my friend too.");
+//         break;
+//     case "charlie":
+//         console.log("Charlie! Nice to see you, my friend.");
+//         break;
+//     default:
+//         console.log(`Sorry, I don't know ${userName}.`);
+// }
 
 
 /**
@@ -167,34 +176,34 @@ switch (userName.toLowerCase()) {
  * @param {Solution}
  */
 
-// Step 1: Create an array that contains Rock, Paper, and Scissors.
-const choices = ['Rock', 'Paper', 'Scissors'];
+// // Step 1: Create an array that contains Rock, Paper, and Scissors.
+// const choices = ['Rock', 'Paper', 'Scissors'];
 
-// Step 2: Set up variables for player and computer selections.
-const playerSelectionIndex = Math.floor(Math.random() * 3); // Generates a random index for player
-const computerSelectionIndex = Math.floor(Math.random() * 3); // Generates a random index for computer
+// // Step 2: Set up variables for player and computer selections.
+// const playerSelectionIndex = Math.floor(Math.random() * 3); // Generates a random index for player
+// const computerSelectionIndex = Math.floor(Math.random() * 3); // Generates a random index for computer
 
-// Step 3: Create a variable to hold a response message to the user.
-let resultMessage;
+// // Step 3: Create a variable to hold a response message to the user.
+// let resultMessage;
 
-// Step 4: Create a condition to handle player and computer selections.
-if (playerSelectionIndex === computerSelectionIndex) {
-    resultMessage = 'It\'s a tie!';
-} else {
-    // Step 5: Use conditions to apply the game logic and return the correct results.
-    if (
-        (playerSelectionIndex === 0 && computerSelectionIndex === 2) ||
-        (playerSelectionIndex === 1 && computerSelectionIndex === 0) ||
-        (playerSelectionIndex === 2 && computerSelectionIndex === 1)
-    ) {
-        resultMessage = 'You win!';
-    } else {
-        resultMessage = 'Computer wins!';
-    }
-}
+// // Step 4: Create a condition to handle player and computer selections.
+// if (playerSelectionIndex === computerSelectionIndex) {
+//     resultMessage = 'It\'s a tie!';
+// } else {
+//     // Step 5: Use conditions to apply the game logic and return the correct results.
+//     if (
+//         (playerSelectionIndex === 0 && computerSelectionIndex === 2) ||
+//         (playerSelectionIndex === 1 && computerSelectionIndex === 0) ||
+//         (playerSelectionIndex === 2 && computerSelectionIndex === 1)
+//     ) {
+//         resultMessage = 'You win!';
+//     } else {
+//         resultMessage = 'Computer wins!';
+//     }
+// }
 
-// Step 6: Output the result message to the console.
-console.log(`Player chose ${choices[playerSelectionIndex]}. Computer chose ${choices[computerSelectionIndex]}. ${resultMessage}`);
+// // Step 6: Output the result message to the console.
+// console.log(`Player chose ${choices[playerSelectionIndex]}. Computer chose ${choices[computerSelectionIndex]}. ${resultMessage}`);
 
 
 /**
@@ -225,26 +234,26 @@ console.log(`Player chose ${choices[playerSelectionIndex]}. Computer chose ${cho
  */
 
 
-// Step 1: Set up a blank array to contain the final multiplication table.
-const multiplicationTable = [];
+// // Step 1: Set up a blank array to contain the final multiplication table.
+// const multiplicationTable = [];
 
-// Step 2: Set a value variable to specify how many values you want to multiply.
-const valuesToMultiply = 10; // You can change this to generate a table for a different range.
+// // Step 2: Set a value variable to specify how many values you want to multiply.
+// const valuesToMultiply = 10; // You can change this to generate a table for a different range.
 
-// Step 3: Create an outer for loop to iterate through each row.
-for (let i = 1; i <= valuesToMultiply; i++) {
-    // Create a temporary array to store the row values.
-    const tempRow = [];
+// // Step 3: Create an outer for loop to iterate through each row.
+// for (let i = 1; i <= valuesToMultiply; i++) {
+//     // Create a temporary array to store the row values.
+//     const tempRow = [];
 
-    // Step 4: Add an inner for loop for the column values.
-    for (let j = 1; j <= valuesToMultiply; j++) {
-        // Push the multiplied row and column values to the temp array.
-        tempRow.push(i * j);
-    }
+//     // Step 4: Add an inner for loop for the column values.
+//     for (let j = 1; j <= valuesToMultiply; j++) {
+//         // Push the multiplied row and column values to the temp array.
+//         tempRow.push(i * j);
+//     }
 
-    // Step 5: Add the temporary row data to the main array of the final table.
-    multiplicationTable.push(tempRow);
-}
+//     // Step 5: Add the temporary row data to the main array of the final table.
+//     multiplicationTable.push(tempRow);
+// }
 
-// Display the final multiplication table.
-console.log(multiplicationTable);
+// // Display the final multiplication table.
+// console.log(multiplicationTable);
