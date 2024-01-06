@@ -156,12 +156,10 @@ console.table(num);
  * but for processing values it is a very nice and readable loop.
  */
 
-
 // let names1: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
 // for (let name of names1) {
 //   console.log(name);
 // }
-
 
 // cannot change the values
 // for (let name of names1) {
@@ -174,7 +172,6 @@ console.table(num);
 //   names1[i] = "hello " + names1[i]
 // }
 // console.log(names1);
-
 
 /**
  * @param {for in loop}
@@ -189,3 +186,28 @@ for (let index in names1) {
 for (let value of names1) {
   console.log(value);
 }
+
+/**
+ * @param {break and continue statements}
+ *
+ **/
+
+// The continue statement is used to skip the current iteration of the loop and the control flow of the program goes to the next iteration.
+for (let c = 0; c < 10; c++) {
+  if (c == 6) {
+    continue;
+  }
+  console.log(c);
+}
+
+// The break statement is used to terminate the loop immediately when it is encountered
+for (let b = 0; b < 10; b++) {
+  if (b == 6) {
+    break;
+  }
+  console.log(b);
+}
+
+/**
+ * @param { chapter 6 Conditional statements}
+ */
