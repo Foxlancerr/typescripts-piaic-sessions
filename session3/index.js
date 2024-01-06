@@ -257,3 +257,5 @@ structure.
 
 // // Display the final multiplication table.
 // console.log(multiplicationTable);
+
+
