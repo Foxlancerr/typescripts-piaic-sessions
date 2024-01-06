@@ -105,11 +105,11 @@ let num = [
     [100, 200, 300, 400],
 ];
 console.table(num);
-for (let i = 0; i < num.length; i++) {
-    for (let j = 0; j < num[i].length; j++) {
-        console.log(i, j);
-    }
-}
+// for (let i = 0; i < num.length; i++) {
+//   for (let j = 0; j < num[i].length; j++) {
+//     console.log(i, j);
+//   }
+// }
 // for(let i = 0; i < num.length; i++){
 //     for(let j = 0; j < num[i].length; j++){
 //         console.log(num[i][j]);
@@ -119,37 +119,39 @@ for (let i = 0; i < num.length; i++) {
  * @param {Loops and arrays}
  *
  */
-let names = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
-for (let i = 0; i < names.length; i++) {
-    console.log(names[i]);
-}
+// let names: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let i = 0; i < names.length; i++) {
+//   console.log(names[i]);
+// }
 /**
  * @param {for of loop}
  * There is another loop we can use to iterate over the elements of an array: the for of loop.
  * It cannot be used to change the value associated with the index as we can do with the regular loop,
  * but for processing values it is a very nice and readable loop.
  */
-let names1 = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
-for (let name of names1) {
-    console.log(name);
-}
+// let names1: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+// for (let name of names1) {
+//   console.log(name);
+// }
 // cannot change the values
-for (let name of names1) {
-    names[names1.indexOf(name)] = "hello " + name;
-}
-console.log(names1);
+// for (let name of names1) {
+//   names[names1.indexOf(name)] = "hello " + name;
+// }
+// console.log(names1);
 // for (let i = 0; i < names1.length; i++) {
 //   names1[i] = "hello " + names1[i]
 // }
 // console.log(names1);
-let namesObj = {
-    id: 0,
-    name: "kamran",
-    city: "peshawar"
-};
-for (let [key, value] of Object.entries(namesObj)) {
-    console.log(key, value);
+/**
+ * @param {for in loop}
+ * There is another loop we can use to iterate over the elements of an array: the for of loop.
+ * It cannot be used to change the value associated with the index as we can do with the regular loop,
+ * but for processing values it is a very nice and readable loop.
+ */
+let names1 = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let index in names1) {
+    console.log(index);
 }
-console.log(Object.entries(namesObj));
-console.log(Object.keys(namesObj));
-console.log(Object.values(namesObj));
+for (let value of names1) {
+    console.log(value);
+}

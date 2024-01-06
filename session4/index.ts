@@ -156,10 +156,12 @@ console.table(num);
  * but for processing values it is a very nice and readable loop.
  */
 
-let names1: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+
+// let names1: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
 // for (let name of names1) {
 //   console.log(name);
 // }
+
 
 // cannot change the values
 // for (let name of names1) {
@@ -174,17 +176,16 @@ let names1: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
 // console.log(names1);
 
 
-let namesObj = {
-    id: 0,
-    name: "kamran",
-    city: "peshawar"
+/**
+ * @param {for in loop}
+ * There is another loop we can use to iterate over the index value [0,1,2...,n] of an array: the for in loop.
+ */
+
+let names1: string[] = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
+for (let index in names1) {
+  console.log(index);
 }
 
-// for (let [key, value] of Object.entries(namesObj)) {
-// 	console.log(key, value);
-// }
-
-
-// console.log(Object.entries(namesObj));
-// console.log(Object.keys(namesObj));
-// console.log(Object.values(namesObj));
+for (let value of names1) {
+  console.log(value);
+}
