@@ -53,11 +53,68 @@ while (count < 10) {
  */
 
 // program to display numbers
-let i:number = 1;
-const n:number = 5;
+let i: number = 1;
+const n: number = 5;
 
 // do...while loop from 1 to 5
 do {
-    console.log(i);
-    i++;
-} while(i <= n);
+  console.log(i);
+  i++;
+} while (i <= n);
+
+/**
+ * @param {for Loop}
+ * The for statement is a type of loop that will use up to three optional expressions to
+ * implement the repeated execution of a code block.
+ */
+
+/**
+ * @param {syntex}
+ */
+
+// for (initialization; condition; final expression) {
+// 	// code to be executed
+// }
+
+/**
+ * @param {How it works}
+ */
+
+// 1. Initialize the variables.
+// 2. Check the condition.
+// 3. If the condition is true, execute the code block. If the condition is false, the
+// loop will end here.
+// 4. Perform the statement (the third part, for example, i++).
+// 5. Go back to step 2.
+
+/**
+ * @param {no loop used}
+ * 
+ */
+
+// Set initial variable to 0
+let i1:number = 0;
+
+// Manually increment variable by 1 four times
+console.log(i1++);
+console.log(i1++);
+console.log(i1++);
+console.log(i1++);
+console.log(i1++);
+console.log(i1++);
+
+/**
+ * @param {Example}
+ * 
+ */
+// Initialize empty array
+let arrayExample:number[] = [];
+
+// Initialize loop to run 3 times
+for (let i = 0; i < 3; i++) {
+	// Update array with variable value
+	arrayExample.push(i);
+	console.log(arrayExample);
+}
+
+
