@@ -144,9 +144,7 @@ console.table(num);
 // console.log(names1);
 /**
  * @param {for in loop}
- * There is another loop we can use to iterate over the elements of an array: the for of loop.
- * It cannot be used to change the value associated with the index as we can do with the regular loop,
- * but for processing values it is a very nice and readable loop.
+ * There is another loop we can use to iterate over the index value [0,1,2...,n] of an array: the for in loop.
  */
 let names1 = ["Chantal", "John", "Maxime", "Bobbi", "Jair"];
 for (let index in names1) {
@@ -154,4 +152,150 @@ for (let index in names1) {
 }
 for (let value of names1) {
     console.log(value);
+}
+/**
+ * @param {break and continue statements}
+ *
+ **/
+// The continue statement is used to skip the current iteration of the loop and the control flow of the program goes to the next iteration.
+for (let c = 0; c < 10; c++) {
+    if (c == 6) {
+        continue;
+    }
+    console.log(c);
+}
+// The break statement is used to terminate the loop immediately when it is encountered
+for (let b = 0; b < 10; b++) {
+    if (b == 6) {
+        break;
+    }
+    console.log(b);
+}
+/**
+ * @param { chapter 4 Conditional OR Logical statements}
+ *
+ * We will be dealing with logical statements. Logical statements allow us to make
+ * multiple paths in our code. Depending on the outcome of a certain expression,
+ * we will follow one code path or another.
+ */
+/**
+ * @param { if statement}
+ */
+// An if statement will evaluate whether a statement is true or false,
+// and only run if the statement returns true. The code block will be ignored
+// in the case of a false result, and the program will skip to the next section.
+// Set balance and price of item
+const balance = 500;
+const jeans = 40;
+// Check if there are enough funds to purchase item
+if (jeans <= balance) {
+    console.log("You have enough money to purchase the item!");
+}
+/**
+ * @param { if-else statement}
+ */
+// With if statements, we only execute code when a statement evaluates to true,
+// but often we will want something else to happen if the condition fails.
+if (jeans <= balance) {
+    console.log("You have enough money to purchase the item!");
+}
+else {
+    console.log("You do not have enough money in your account to purchase this item.");
+}
+/**
+ * @param { else-if statement}
+ */
+// With if and else, we can run blocks of code depending on whether a condition is true or false. However, sometimes we might have multiple possible conditions and outputs, and need more than simply two options. One way to do this is with the else if statement, which can evaluate more than two possible outcomes.
+// if (condition a) {
+// 	// code that will execute if condition a is true
+// } else if (condition b) {
+// 	// code that will execute if condition b is true
+// } else if (condition c) {
+// 	// code that will execute if condition c is true
+// } else {
+// 	// code that will execute if all above conditions are false
+// }
+// Set the current grade of the student
+let grade = 87;
+// Check if grade is an A, B, C, D, or F
+if (grade >= 90) {
+    console.log("A");
+}
+else if (grade >= 80) {
+    console.log("B");
+}
+else if (grade >= 70) {
+    console.log("C");
+}
+else if (grade >= 60) {
+    console.log("D");
+}
+else {
+    console.log("F");
+}
+/**
+ * @param {Ternary Operator}
+ */
+// The ternary operator, also known as the conditional operator, is used as shorthand for an if...else statement.
+// (condition) ? expression on true : expression on false
+// Set age of user
+let age = 20;
+// Place result of ternary operation in a variable
+const oldEnough = age >= 21 ? "You may enter." : "You may not enter.";
+console.log(oldEnough);
+/**
+ * @param {switch statement}
+ */
+// switch is a type of conditional statement that will evaluate an expression against multiple possible cases and execute one or more blocks of code based on matching cases. The switch statement is closely related to a conditional statement containing many else if blocks, and they can often be used interchangeably.
+let activity = "Getup";
+switch (activity) {
+    case "Getup":
+        console.log("It is 6:30AM");
+        break;
+    case "Breakfast":
+        console.log("It is 7:00AM");
+        break;
+    case "Drive to work":
+        console.log("It is 8:00AM");
+        break;
+    case "Lunch":
+        console.log("It is 12:00PM");
+        break;
+    case "Drive home":
+        console.log("It is 5:00PM");
+        break;
+    case "Dinner":
+        console.log("It is 6:30PM");
+        break;
+}
+// multiple cases
+// Get number corresponding to the current month, with 0 being January and 11 being December
+const month = new Date().getMonth();
+switch (month) {
+    // January, February, March
+    case 0:
+    case 1:
+    case 2:
+        console.log("Winter");
+        break;
+    // April, May, June
+    case 3:
+    case 4:
+    case 5:
+        console.log("Spring");
+        break;
+    // July, August, September
+    case 6:
+    case 7:
+    case 8:
+        console.log("Summer");
+        break;
+    // October, November, December
+    case 9:
+    case 10:
+    case 11:
+        console.log("Autumn");
+        break;
+    default:
+        console.log("Something went wrong.");
 }
